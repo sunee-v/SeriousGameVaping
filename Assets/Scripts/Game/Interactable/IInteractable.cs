@@ -4,5 +4,5 @@ public interface IInteractable
     void OnStartHover();
     void OnInteract();
     void OnEndHover();
-    public abstract string GetDescription();
+    public abstract string GetInteractionText();
 }

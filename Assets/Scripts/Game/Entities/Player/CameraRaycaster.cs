@@ -11,6 +11,13 @@ public class CameraRaycaster : MonoBehaviour
 	private void Awake()
 	{
 		cam = Camera.main;
+		playerInput = GetComponent<PlayerInput>();
+		SetInputActions();
+	}
+	private void Start()
+	{
+		GameManager.Instance.Inventory.OnSlotChanged += _ => clearTarget();
+		GameManager.Instance.Inventory.OnInventoryUpdate += _ => clearTarget();
 	}
 	protected virtual void SetInputActions()
 	{
@@ -23,6 +30,8 @@ public class CameraRaycaster : MonoBehaviour
 	private void OnDestroy()
 	{
 		RemoveInputActions();
+		GameManager.Instance.Inventory.OnSlotChanged -= _ => clearTarget();
+		GameManager.Instance.Inventory.OnInventoryUpdate -= _ => clearTarget();
 	}
 	private void Update()
 	{
@@ -30,7 +39,7 @@ public class CameraRaycaster : MonoBehaviour
 	}
 	private void interact()
 	{
-		if(currentTarget == null) { return; }
+		if (currentTarget == null) { return; }
 		currentTarget.OnInteract();
 	}
 	private void raycastForInteractable()
@@ -54,7 +63,7 @@ public class CameraRaycaster : MonoBehaviour
 			return;
 		}
 		if (_interactable == currentTarget) { return; }
-		HUDManager.Instance.SetInteractionText(_interactable.GetDescription());
+		HUDManager.Instance.SetInteractionText(_interactable.GetInteractionText());
 		currentTarget = _interactable;
 		currentTarget.OnStartHover();
 	}
