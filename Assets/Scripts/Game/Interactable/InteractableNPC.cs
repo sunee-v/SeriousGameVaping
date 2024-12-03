@@ -19,8 +19,6 @@ public class InteractableNPC : MonoBehaviour, IInteractable
 
 	public void OnInteract()
 	{
-		Debug.Log("Interacted with " + gameObject.name);
-		Debug.Log("hudmanager show text bla bla bla");
 		HUDManager.Instance.StartConversation(npcSpeech);
 	}
 
