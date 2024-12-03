@@ -11,6 +11,7 @@ public class HUDManager : InstanceFactory<HUDManager>
 	private CancellationTokenSource cts;
 	private InventoryUI inventoryUI;
 	private NarrativeUI narrativeUI;
+	[SerializeField] private GameObject narrativeBox;
 	protected override void Awake()
 	{
 		base.Awake();
@@ -39,6 +40,7 @@ public class HUDManager : InstanceFactory<HUDManager>
 	}
 	private async UniTask conversation(Conversation _convo, CancellationToken _cts = default)
 	{
+		narrativeBox.SetActive(isInConversation);
 		for (int i = 0; i < _convo.Dialogues.Length; ++i)
 		{
 			conversationText.text = _convo.Dialogues[i].Text;
@@ -55,6 +57,7 @@ public class HUDManager : InstanceFactory<HUDManager>
 			cts = null;
 		}
 		isInConversation = false;
+		narrativeBox.SetActive(isInConversation);
 		Debug.Log("Player ended conversation!");
 		conversationText.text = "";
 	}
