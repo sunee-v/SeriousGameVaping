@@ -31,6 +31,7 @@ public class VapeObject : MonoBehaviour, IInteractable, IInventoryItem
 		}
 		HUDManager.Instance.ShowNarrative(pickUpNarrative, 5, narrativeSprite);
 		gameObject.SetActive(false);
+		transform.parent = null;
 	}
 
 	public void OnStartHover()
