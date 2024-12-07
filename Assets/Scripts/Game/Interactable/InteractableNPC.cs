@@ -6,7 +6,12 @@ public class InteractableNPC : MonoBehaviour, IInteractable
 	[SerializeField] private string npcName;
 	[TextArea(2, 50), SerializeField] private string interactionText = "Press [E] to talk to";
 	[SerializeField]
-	private Conversation npcSpeech = new();
+	private Conversation[] npcSpeech = new Conversation[1];
+	private int conversationIndex = 0;
+	[SerializeField] private int teleportIndex = -1;
+	[SerializeField] private Vector3 teleportLocation;
+	private bool hasInteracted;
+	private bool shouldTp;
 	public string GetInteractionText()
 	{
 		return interactionText + " " + npcName;
@@ -15,11 +20,19 @@ public class InteractableNPC : MonoBehaviour, IInteractable
 	public void OnEndHover()
 	{
 		HUDManager.Instance.EndConversation();
+		if (!hasInteracted) { return; }
+		if (!shouldTp) { return; }
+		GameManager.Instance.Player.transform.position = teleportLocation;
+		shouldTp = false;
+		hasInteracted = false;
 	}
 
 	public void OnInteract()
 	{
-		HUDManager.Instance.StartConversation(npcSpeech);
+		hasInteracted = true;
+		HUDManager.Instance.StartConversation(npcSpeech[conversationIndex]);
+		if (teleportIndex == conversationIndex) { shouldTp = true; }
+		conversationIndex = (1 + conversationIndex) % npcSpeech.Length;
 	}
 
 	public void OnStartHover()
