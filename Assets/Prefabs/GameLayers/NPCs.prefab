@@ -133,6 +133,10 @@ MonoBehaviour:
       Duration: 1
   teleportIndex: -1
   teleportLocation: {x: 0, y: 0, z: 0}
+  teleportNarrative:
+    Dialogues: []
+  afterProfessorConversation:
+    Dialogues: []
 --- !u!136 &7867424300587490523
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -233,7 +237,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7421057117238829718}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
+  m_Script: {fileID: 11500000, guid: a129ffaed592643c4bb72036335e038b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   <MaxRange>k__BackingField: 5
@@ -266,6 +270,10 @@ MonoBehaviour:
       Duration: 5
   teleportIndex: -1
   teleportLocation: {x: 0, y: 0, z: 0}
+  teleportNarrative:
+    Dialogues: []
+  afterProfessorConversation:
+    Dialogues: []
 --- !u!136 &1349411592559193483
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -427,6 +435,10 @@ MonoBehaviour:
       Duration: 4
   teleportIndex: 3
   teleportLocation: {x: -40.9, y: 0, z: 4.37}
+  teleportNarrative:
+    Dialogues: []
+  afterProfessorConversation:
+    Dialogues: []
 --- !u!136 &3927030175514626824
 CapsuleCollider:
   m_ObjectHideFlags: 0

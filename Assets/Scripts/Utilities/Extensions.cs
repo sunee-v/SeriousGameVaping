@@ -76,7 +76,12 @@ public static class Extensions
 		if (_gameobject.layer == LayerMask.NameToLayer(_layer)) { return true; }
 		return false;
 	}
-
+	/// <summary>
+	/// Returns true if the string contains any of the strings in the parameters
+	/// </summary>
+	/// <param name="_string"></param>
+	/// <param name="_contains"></param>
+	/// <returns></returns>
 	public static bool Contains(this string _string, params string[] _contains)
 	{
 		foreach (string _contain in _contains)
@@ -87,6 +92,21 @@ public static class Extensions
 			}
 		}
 		return false;
+	}
+	public static bool ContainsAll(this string _string, out float _accuracy, params string[] _contains)
+	{
+		bool _containsAll = true;
+		int _right = _contains.Length;
+		foreach (string _contain in _contains)
+		{
+			if (!_string.Contains(_contain))
+			{
+				_containsAll = false;
+				--_right;
+			}
+		}
+		_accuracy = (float)_right / _contains.Length;
+		return _containsAll;
 	}
 	public static bool Equals<T>(this T _object, params T[] _comparisons)
 	{

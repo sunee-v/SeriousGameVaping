@@ -17,8 +17,7 @@ public class CameraController : MonoBehaviour
     {
         if(cursorLock)
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            GameManager.Instance.LockCursor();
         }
     }
 
