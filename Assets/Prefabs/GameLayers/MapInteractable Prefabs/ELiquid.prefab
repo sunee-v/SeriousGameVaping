@@ -83,6 +83,6 @@ MonoBehaviour:
   interactionText: Press [E] to pick up
   pickUpNarrative: '"WARNING: This product can expose you to chemicals, including
     formaldehyde, which is known to the state of California to cause cancer, and
-    nicotine. Which is known to the state of California to cause birth defects or
+    nicotine, which is known to the state of California to cause birth defects or
     other reproductive harm." '
   narrativeSprite: {fileID: 21300000, guid: df507c7e0f417402cac9ced64bafc5bb, type: 3}
