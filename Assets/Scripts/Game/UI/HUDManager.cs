@@ -116,6 +116,7 @@ public class HUDManager : InstanceFactory<HUDManager>
 			return;
 		}
 		Debug.Log("player lose");
+		GameManager.Instance.LockCursor();
 		narrativeUI.SetNarrative("Review the information with the professor!", null, 3);
 		inputField.text = "";
 		inputField.gameObject.SetActive(false);
