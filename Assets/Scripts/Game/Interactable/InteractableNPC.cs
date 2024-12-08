@@ -12,6 +12,7 @@ public class InteractableNPC : MonoBehaviour, IInteractable
 	[SerializeField] private Vector3 teleportLocation;
 	private bool hasInteracted;
 	private bool shouldTp;
+	[SerializeField] private string[] teleportNarrative;
 	public string GetInteractionText()
 	{
 		return interactionText + " " + npcName;
@@ -22,9 +23,13 @@ public class InteractableNPC : MonoBehaviour, IInteractable
 		HUDManager.Instance.EndConversation();
 		if (!hasInteracted) { return; }
 		if (!shouldTp) { return; }
+		Debug.Log(teleportNarrative.Length);
 		GameManager.Instance.Player.transform.position = teleportLocation;
 		shouldTp = false;
 		hasInteracted = false;
+		Debug.Log(gameObject.name +" "+ transform.position);
+		
+		//HUDManager.Instance.ShowNarrative(teleportNarrative);
 	}
 
 	public void OnInteract()
@@ -37,6 +42,6 @@ public class InteractableNPC : MonoBehaviour, IInteractable
 
 	public void OnStartHover()
 	{
-		Debug.Log("Hovering over " + gameObject.name);
+		
 	}
 }

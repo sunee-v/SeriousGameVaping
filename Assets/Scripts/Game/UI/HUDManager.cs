@@ -70,6 +70,25 @@ public class HUDManager : InstanceFactory<HUDManager>
 		Debug.Log("Narrative: " + _text);
 		narrativeUI.SetNarrative(_text, _sprite, _duration);
 	}
+	public void ShowNarrative(Conversation _convo)
+	{
+		Debug.Log(_convo.Dialogues.Length);
+		if (_convo.Dialogues.Length == 0)
+		{
+			Debug.LogWarning("No dialogues in conversation!");
+			return;
+		}
+		Debug.Log("Narrative: " + _convo.Dialogues[0].Text);
+		narrativeConversation(_convo).Forget();
+	}
+	private async UniTask narrativeConversation(Conversation _convo, CancellationToken _cts = default)
+	{
+		for (int i = 0; i < _convo.Dialogues.Length; ++i)
+		{
+			narrativeUI.SetNarrative(_convo.Dialogues[i].Text, null, _convo.Dialogues[i].Duration);
+			await UniTask.WaitForSeconds(_convo.Dialogues[i].Duration, cancellationToken: _cts);
+		}
+	}
 	public void OnInventoryUpdate(IInventoryItem[] _items)
 	{
 		inventoryUI.UpdateSprites(_items);
