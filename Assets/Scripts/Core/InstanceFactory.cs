@@ -12,4 +12,9 @@ public class InstanceFactory<T> : MonoBehaviour where T : MonoBehaviour
 		}
 		Instance = this as T;
 	}
+	protected virtual void OnDestroy()
+	{
+		if (Instance != this) { return; }
+		Instance = null;
+	}
 }
