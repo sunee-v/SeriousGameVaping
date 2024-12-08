@@ -3,8 +3,17 @@ using UnityEngine;
 public class PlacedownLocation : MonoBehaviour, IInteractable
 {
 	[field: SerializeField] public float MaxRange { get; set; } = 5;
-	[SerializeField] private Transform placePosition;
-
+	private Transform[] placePosition;
+	private int index;
+	private void Awake()
+	{
+		//placePosition = GetComponentsInChildren<Transform>();
+		placePosition = new Transform[transform.childCount];
+		for (int i = 0; i < placePosition.Length; i++)
+		{
+			placePosition[i] = transform.GetChild(i);
+		}
+	}
 
 	public string GetInteractionText()
 	{
@@ -30,10 +39,47 @@ public class PlacedownLocation : MonoBehaviour, IInteractable
 	{
 		MonoBehaviour _item = GameManager.Instance.Inventory.GetSelectedItem() as MonoBehaviour;
 		if (_item == null) { return; }
-		GameObject _go = _item.gameObject;
-		_go.transform.SetPositionAndRotation(placePosition.position, placePosition.rotation);
-		_go.SetActive(true);
+		Transform _go = _item.transform;
+		getFullIndex();
+		_go.parent = placePosition[index];
+		_go.SetPositionAndRotation(placePosition[index].position, placePosition[index].rotation);
+		_go.gameObject.SetActive(true);
 		GameManager.Instance.Inventory.RemoveItem();
+		index = (1 + index) % placePosition.Length;
+	}
+	private void getFullIndex()
+	{
+		if (placePosition[index].childCount == 0)
+		{
+			Debug.Log("no child");
+			return;
+		}
+		for (int i = 0; i < placePosition.Length; ++i)
+		{
+			Debug.Log("Evualuating index: " + i);
+			if (placePosition[i].childCount != 0)
+			{
+				if (hasEnabledChild(placePosition[index])) { continue; }
+				index = i;
+			}
+			index = i;
+			break;
+		}
+	}
+	private bool hasEnabledChild(Transform _parent)
+	{
+		bool _hasEnabledChild = false;
+		for (int i = 0; i < _parent.childCount; ++i)
+		{
+			if (_parent.GetChild(i).gameObject.activeSelf)
+			{
+				Debug.Log($"Checking if {_parent.GetChild(i).name} is active");	
+				_hasEnabledChild = true;
+				Debug.Log("Has enabled child");
+				break;
+			}
+		}
+		return _hasEnabledChild;
 	}
 
 	public void OnStartHover()
