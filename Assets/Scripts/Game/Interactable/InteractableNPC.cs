@@ -36,9 +36,9 @@ public class InteractableNPC : MonoBehaviour, IInteractable
 	{
 		hasInteracted = true;
 		HUDManager.Instance.StartConversation
-		(GameManager.Instance.hasInteractedWithProfessor ? 
+		(GameManager.Instance.HasInteractedWithProfessor ? 
 		afterProfessorConversation : npcSpeech[conversationIndex]);
-		if(GameManager.Instance.hasInteractedWithProfessor)
+		if(GameManager.Instance.HasInteractedWithProfessor)
 		{
 			HUDManager.Instance.ShowInputField();
 		}
