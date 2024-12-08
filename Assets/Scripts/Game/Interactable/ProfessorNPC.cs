@@ -7,4 +7,8 @@ public class ProfessorNPC : InteractableNPC
 		base.OnInteract();
 		GameManager.Instance.HasInteractedWithProfessor = true;
 	}
+	protected override void conversation()
+	{
+		HUDManager.Instance.StartConversation(npcSpeech[conversationIndex]);
+	}
 }
