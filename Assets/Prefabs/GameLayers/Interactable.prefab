@@ -25679,8 +25679,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 877ee90d9a81e3941afa0d445d7e051e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 958482229385436577}
   m_SourcePrefab: {fileID: 100100000, guid: 877ee90d9a81e3941afa0d445d7e051e, type: 3}
+--- !u!1 &3772600920690609974 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 877ee90d9a81e3941afa0d445d7e051e, type: 3}
+  m_PrefabInstance: {fileID: 4079013718164140647}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &958482229385436577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3772600920690609974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7ff927cb76c84af6926784c0f3cac3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 5
+  <ItemIcon>k__BackingField: {fileID: 0}
+  <ItemName>k__BackingField: 
+  interactionText: Press [E] to pick up
 --- !u!4 &4544457617025734028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 877ee90d9a81e3941afa0d445d7e051e, type: 3}
@@ -26861,8 +26885,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 877ee90d9a81e3941afa0d445d7e051e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6846822166175146015}
   m_SourcePrefab: {fileID: 100100000, guid: 877ee90d9a81e3941afa0d445d7e051e, type: 3}
+--- !u!1 &4029021306094958364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 877ee90d9a81e3941afa0d445d7e051e, type: 3}
+  m_PrefabInstance: {fileID: 4262828940928223821}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6846822166175146015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4029021306094958364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7ff927cb76c84af6926784c0f3cac3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 5
+  <ItemIcon>k__BackingField: {fileID: 0}
+  <ItemName>k__BackingField: 
+  interactionText: Press [E] to pick up
 --- !u!4 &4369095456810429862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 877ee90d9a81e3941afa0d445d7e051e, type: 3}
@@ -44181,13 +44229,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 877ee90d9a81e3941afa0d445d7e051e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6601868858415529612}
   m_SourcePrefab: {fileID: 100100000, guid: 877ee90d9a81e3941afa0d445d7e051e, type: 3}
 --- !u!4 &7075806256668676066 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 877ee90d9a81e3941afa0d445d7e051e, type: 3}
   m_PrefabInstance: {fileID: 7329864787566028809}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7600247552277566808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 877ee90d9a81e3941afa0d445d7e051e, type: 3}
+  m_PrefabInstance: {fileID: 7329864787566028809}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6601868858415529612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7600247552277566808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7ff927cb76c84af6926784c0f3cac3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 5
+  <ItemIcon>k__BackingField: {fileID: 0}
+  <ItemName>k__BackingField: 
+  interactionText: Press [E] to pick up
 --- !u!1001 &7351033095023599975
 PrefabInstance:
   m_ObjectHideFlags: 0

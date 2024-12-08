@@ -136,7 +136,9 @@ MonoBehaviour:
   teleportNarrative:
     Dialogues: []
   afterProfessorConversation:
-    Dialogues: []
+    Dialogues:
+    - Text: Hey, what'd you talk to the professor about?
+      Duration: 3
 --- !u!136 &7867424300587490523
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -248,25 +250,29 @@ MonoBehaviour:
     - Text: Well to start off, Canada has one of the highest rates of vaping. Almost
         50% of students back in 2021 and 2022 have tried or were actively vaping!
         An incredible percentage!
-      Duration: 4
+      Duration: 5
     - Text: McGill University has found that males that vape are at a higher risk
         of developing heart disease.
-      Duration: 4
+      Duration: 5
     - Text: There was a development of atherosclerosis, a condition that can cause
         heart attacks. It's when the heart and blood vessels get built up with plaque.
-      Duration: 4
+      Duration: 5
     - Text: Not to mention that there is nicotine in these vapes! Nicotine is known
         to be highly addictive and it can also cause brain damage.
-      Duration: 4
+      Duration: 5
     - Text: Well there's more damage that is yet to be researched upon due to how
         rather recent vapes are in the scene.
       Duration: 3
     - Text: But the carcinogens that make up the e-liquids for flavouring are a lot
         more harmful than they seems. Well, carcinogens are known to cause cancer.
-      Duration: 3
+      Duration: 5
     - Text: There's also things like formaldehyde that is found in vapes. Formaldehyde
         is a chemical used to preserve bodies after death. So, technically it means
         you are consuming what morticians use on the deceased.
+      Duration: 5
+    - Text: There are also some research on vapes causing cell death. You can check
+        out WebMD if you would like a general summary of vapes and what they do to
+        the human body.
       Duration: 5
   teleportIndex: -1
   teleportLocation: {x: 0, y: 0, z: 0}
@@ -436,7 +442,17 @@ MonoBehaviour:
   teleportIndex: 3
   teleportLocation: {x: -40.9, y: 0, z: 4.37}
   teleportNarrative:
-    Dialogues: []
+    Dialogues:
+    - Text: Over the years you watch Daniel continue to vape. It seems that he cannot
+        seem to let go of it, as if he is addicted to that device.
+      Duration: 5
+    - Text: He seems to cough a lot and has a raspier voice. It also seems like he
+        is unable to exhale the same as before.
+      Duration: 5
+    - Text: You two are now in university and you meet a professor that seems to
+        have done research on vaping. Curiosity gets the best of you, and you end
+        up discussing with him about his research.
+      Duration: 5
   afterProfessorConversation:
     Dialogues: []
 --- !u!136 &3927030175514626824

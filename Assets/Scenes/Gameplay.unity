@@ -980,9 +980,16 @@ MonoBehaviour:
   playerPrefab: {fileID: 2283400416031375384, guid: 202ff6cda803544018230ce61bb78add, type: 3}
   spwanPosition: {fileID: 1049550406}
   frameRate: 60
+  HasInteractedWithProfessor: 0
   <VapeContents>k__BackingField:
   - formaldehyde
-  <AccuracyToWin>k__BackingField: 50
+  - nicotine
+  - heart disease
+  - brain damage
+  - cell death
+  - carcinogens
+  - cancer
+  <AccuracyToWin>k__BackingField: 40
 --- !u!4 &710022370
 Transform:
   m_ObjectHideFlags: 0
