@@ -12,7 +12,10 @@ public class InteractableNPC : MonoBehaviour, IInteractable
 	[SerializeField] private Vector3 teleportLocation;
 	private bool hasInteracted;
 	private bool shouldTp;
-	[SerializeField] private string[] teleportNarrative;
+	[SerializeField] private Conversation teleportNarrative;
+	[Header("Conversation after the player has interacted with the professor")]
+	[SerializeField] private Conversation afterProfessorConversation;
+
 	public string GetInteractionText()
 	{
 		return interactionText + " " + npcName;
@@ -23,25 +26,28 @@ public class InteractableNPC : MonoBehaviour, IInteractable
 		HUDManager.Instance.EndConversation();
 		if (!hasInteracted) { return; }
 		if (!shouldTp) { return; }
-		Debug.Log(teleportNarrative.Length);
 		GameManager.Instance.Player.transform.position = teleportLocation;
 		shouldTp = false;
 		hasInteracted = false;
-		Debug.Log(gameObject.name +" "+ transform.position);
-		
-		//HUDManager.Instance.ShowNarrative(teleportNarrative);
+		HUDManager.Instance.ShowNarrative(teleportNarrative);
 	}
 
-	public void OnInteract()
+	public virtual void OnInteract()
 	{
 		hasInteracted = true;
-		HUDManager.Instance.StartConversation(npcSpeech[conversationIndex]);
+		HUDManager.Instance.StartConversation
+		(GameManager.Instance.hasInteractedWithProfessor ? 
+		afterProfessorConversation : npcSpeech[conversationIndex]);
+		if(GameManager.Instance.hasInteractedWithProfessor)
+		{
+			HUDManager.Instance.ShowInputField();
+		}
 		if (teleportIndex == conversationIndex) { shouldTp = true; }
 		conversationIndex = (1 + conversationIndex) % npcSpeech.Length;
 	}
 
 	public void OnStartHover()
 	{
-		
+
 	}
 }

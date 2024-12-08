@@ -12,11 +12,14 @@ public class HUDManager : InstanceFactory<HUDManager>
 	private InventoryUI inventoryUI;
 	private NarrativeUI narrativeUI;
 	[SerializeField] private GameObject narrativeBox;
+	[SerializeField] private TMP_InputField inputField;
+	[SerializeField] private CanvasGroup winScreen;
 	protected override void Awake()
 	{
 		base.Awake();
 		inventoryUI = GetComponentInChildren<InventoryUI>();
 		narrativeUI = GetComponentInChildren<NarrativeUI>();
+		inputField.gameObject.SetActive(false);
 	}
 	private void Start()
 	{
@@ -72,25 +75,49 @@ public class HUDManager : InstanceFactory<HUDManager>
 	}
 	public void ShowNarrative(Conversation _convo)
 	{
-		Debug.Log(_convo.Dialogues.Length);
 		if (_convo.Dialogues.Length == 0)
 		{
 			Debug.LogWarning("No dialogues in conversation!");
 			return;
 		}
-		Debug.Log("Narrative: " + _convo.Dialogues[0].Text);
 		narrativeConversation(_convo).Forget();
 	}
 	private async UniTask narrativeConversation(Conversation _convo, CancellationToken _cts = default)
 	{
 		for (int i = 0; i < _convo.Dialogues.Length; ++i)
 		{
-			narrativeUI.SetNarrative(_convo.Dialogues[i].Text, null, _convo.Dialogues[i].Duration);
+			Debug.Log($"Conversation: {i}");
+			narrativeUI.SetNarrative(_convo.Dialogues[i].Text, null, _convo.Dialogues[i].Duration - .1f);
 			await UniTask.WaitForSeconds(_convo.Dialogues[i].Duration, cancellationToken: _cts);
 		}
 	}
 	public void OnInventoryUpdate(IInventoryItem[] _items)
 	{
 		inventoryUI.UpdateSprites(_items);
+	}
+	public void ShowInputField()
+	{
+		inputField.gameObject.SetActive(true);
+		GameManager.Instance.UnlockCursor();
+	}
+	public void SubmitInput()
+	{
+		string _input = inputField.text;
+		if (string.IsNullOrEmpty(_input))
+		{
+			Debug.LogWarning("Input is empty!");
+			return;
+		}
+		_input.ToLower().ContainsAll(out var _accuracy, GameManager.Instance.VapeContents);
+		if (_accuracy * 100 > GameManager.Instance.AccuracyToWin)
+		{
+			Debug.Log("player win");
+			winScreen.Fade(1).Forget();
+			return;
+		}
+		Debug.Log("player lose");
+		narrativeUI.SetNarrative("Review the information with the professor!", null, 3);
+		inputField.text = "";
+		inputField.gameObject.SetActive(false);
 	}
 }
