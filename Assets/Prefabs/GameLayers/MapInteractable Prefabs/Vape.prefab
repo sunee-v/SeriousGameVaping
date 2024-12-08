@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6482034681384541389
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 571b2ec0a132a486ca00fcc1e5f2f06b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.7336385
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 571b2ec0a132a486ca00fcc1e5f2f06b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5038105
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 571b2ec0a132a486ca00fcc1e5f2f06b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.3426733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 571b2ec0a132a486ca00fcc1e5f2f06b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 571b2ec0a132a486ca00fcc1e5f2f06b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 571b2ec0a132a486ca00fcc1e5f2f06b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 571b2ec0a132a486ca00fcc1e5f2f06b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 571b2ec0a132a486ca00fcc1e5f2f06b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 571b2ec0a132a486ca00fcc1e5f2f06b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 571b2ec0a132a486ca00fcc1e5f2f06b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 571b2ec0a132a486ca00fcc1e5f2f06b, type: 3}
+      propertyPath: m_Name
+      value: Vape
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 571b2ec0a132a486ca00fcc1e5f2f06b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7336062880630790924}
+  m_SourcePrefab: {fileID: 100100000, guid: 571b2ec0a132a486ca00fcc1e5f2f06b, type: 3}
+--- !u!1 &6140018051224773020 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 571b2ec0a132a486ca00fcc1e5f2f06b, type: 3}
+  m_PrefabInstance: {fileID: 6482034681384541389}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-7336062880630790924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6140018051224773020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fb4b9438b09e441db61614e23ffaa31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 5
+  <ItemIcon>k__BackingField: {fileID: 21300000, guid: 62b14e9087e43774d958bd357d314dd6, type: 3}
+  <ItemName>k__BackingField: Vape
+  interactionText: Press [E] to pick up
+  pickUpNarrative: Hey you picked up this ite, this item bla bla bla
+  narrativeSprite: {fileID: 0}

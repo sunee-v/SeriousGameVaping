@@ -29,11 +29,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7049671112605948024}
-  - {fileID: 723326145818448640}
+  - {fileID: 8731488670549418879}
+  - {fileID: 7905845453891565612}
+  - {fileID: 2464314981734155731}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &973758496031880427
+--- !u!1001 &2718406255299093048
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -41,164 +42,81 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 973717647516224848}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.4059974
+      value: -37.82
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.0000026226044
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.609803
+      value: 3.33
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.70710784
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.70710576
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-      propertyPath: m_Name
-      value: Daniel2_1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2099272013172394526}
-  m_SourcePrefab: {fileID: 100100000, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
---- !u!1 &90658996481067450 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-  m_PrefabInstance: {fileID: 973758496031880427}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2099272013172394526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 90658996481067450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <MaxRange>k__BackingField: 5
-  npcName: Billy
-  interactionText: 'Press [E] to talk to '
-  npcSpeech:
-    Dialogues:
-    - Text: HEY! DON'T TOUCH THOSE!
-      Duration: 3
---- !u!4 &723326145818448640 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-  m_PrefabInstance: {fileID: 973758496031880427}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &7376843395031416723
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 973717647516224848}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.46
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
+    - target: {fileID: 919132149155446097, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
       propertyPath: m_Name
-      value: Daniel2
+      value: DanielKeyFramed_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 124349979713472031}
-  m_SourcePrefab: {fileID: 100100000, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
---- !u!4 &7049671112605948024 stripped
+      addedObject: {fileID: 2762862653751597779}
+    - targetCorrespondingSourceObject: {fileID: -9144426821234373734, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8366422654257039454}
+    - targetCorrespondingSourceObject: {fileID: -7501455763766903214, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3516948387534633252}
+  m_SourcePrefab: {fileID: 100100000, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+--- !u!4 &2464314981734155731 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-  m_PrefabInstance: {fileID: 7376843395031416723}
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+  m_PrefabInstance: {fileID: 2718406255299093048}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7682760714339320514 stripped
+--- !u!1 &2639602338650139042 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 773abff23a27549e6bf9a2638dfded08, type: 3}
-  m_PrefabInstance: {fileID: 7376843395031416723}
+  m_CorrespondingSourceObject: {fileID: -9144426821234373734, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+  m_PrefabInstance: {fileID: 2718406255299093048}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &124349979713472031
+--- !u!114 &8366422654257039454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7682760714339320514}
+  m_GameObject: {fileID: 2639602338650139042}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
@@ -206,14 +124,506 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MaxRange>k__BackingField: 5
   npcName: Daniel
-  interactionText: 'Press [E] to talk to '
+  interactionText: Press [E] to talk to
   npcSpeech:
-    Dialogues:
-    - Text: Hi! My name is Daniel!
+  - Dialogues:
+    - Text: Hello! My name is Daniel. I'm new here, so I don't know anyone here.
+      Duration: 4
+    - Text: I hope that we can be great friends!
+      Duration: 2
+    - Text: You can talk to other people around to see what's up, but class will
+        begin soon.
       Duration: 3
-    - Text: I hope that we can be friends.
+    - Text: I'll be here if you want to talk again.
       Duration: 3
-    - Text: I'm new to this school, so I don't know anyone.
+  - Dialogues:
+    - Text: Bro, I feel like I'm not doing too good with all this work. We got another
+        assignment.
+      Duration: 5
+    - Text: I feel so overwhelmed with school work on top of life stuff.
       Duration: 3
-    - Text: We should get to class before the bell!
+    - Text: I think I'm getting worried about nothing but it everything feels off.
       Duration: 3
+    - Text: Thank you for listening to me bro. I needed that. I enjoy talking to
+        you.
+      Duration: 5
+  - Dialogues:
+    - Text: Yo bro, I came across this cool ad yesterday about something called a
+        vape.
+      Duration: 3
+    - Text: It looks cool. I was thinking of trying it, but I kinda wanted to talk
+        to someone about it first. I thought the best person to mention it to would
+        be you.
+      Duration: 5
+    - Text: I was thinking of buying one soon and trying it out.
+      Duration: 3
+    - Text: I'll let you know how it goes.
+      Duration: 5
+  - Dialogues:
+    - Text: This stuff makes tastes and feels a bit strange, but it doesn't exactly
+        seem horrible.
+      Duration: 4
+    - Text: I gotta get my money's worth y'know. Using all this up now and if I like
+        it, maybe I will get more.
+      Duration: 4
+    - Text: I honestly think it's something I could get used to. There's so many
+        flavours too!
+      Duration: 3
+    - Text: I wonder how the cherry flavour is. Maybe that will be the next one I
+        will try out.
+      Duration: 4
+  teleportIndex: 3
+  teleportLocation: {x: 0, y: 0, z: 0}
+--- !u!1 &2988369008715128681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+  m_PrefabInstance: {fileID: 2718406255299093048}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2762862653751597779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2988369008715128681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 5
+  npcName: Daniel
+  interactionText: Press [E] to talk to
+  npcSpeech:
+  - Dialogues:
+    - Text: Hello! My name is Daniel. I'm new here, so I don't know anyone here.
+      Duration: 4
+    - Text: I hope that we can be great friends!
+      Duration: 2
+    - Text: You can talk to other people around to see what's up, but class will
+        begin soon.
+      Duration: 3
+    - Text: I'll be here if you want to talk again.
+      Duration: 3
+  - Dialogues:
+    - Text: Bro, I feel like I'm not doing too good with all this work. We got another
+        assignment.
+      Duration: 5
+    - Text: I feel so overwhelmed with school work on top of life stuff.
+      Duration: 3
+    - Text: I think I'm getting worried about nothing but it everything feels off.
+      Duration: 3
+    - Text: Thank you for listening to me bro. I needed that. I enjoy talking to
+        you.
+      Duration: 5
+  - Dialogues:
+    - Text: Yo bro, I came across this cool ad yesterday about something called a
+        vape.
+      Duration: 3
+    - Text: It looks cool. I was thinking of trying it, but I kinda wanted to talk
+        to someone about it first. I thought the best person to mention it to would
+        be you.
+      Duration: 5
+    - Text: I was thinking of buying one soon and trying it out.
+      Duration: 3
+    - Text: I'll let you know how it goes.
+      Duration: 5
+  - Dialogues:
+    - Text: This stuff makes tastes and feels a bit strange, but it doesn't exactly
+        seem horrible.
+      Duration: 4
+    - Text: I gotta get my money's worth y'know. Using all this up now and if I like
+        it, maybe I will get more.
+      Duration: 4
+    - Text: I honestly think it's something I could get used to. There's so many
+        flavours too!
+      Duration: 3
+    - Text: I wonder how the cherry flavour is. Maybe that will be the next one I
+        will try out.
+      Duration: 4
+  teleportIndex: 3
+  teleportLocation: {x: 0, y: 0, z: 0}
+--- !u!1 &3628988344434728042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7501455763766903214, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+  m_PrefabInstance: {fileID: 2718406255299093048}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3516948387534633252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3628988344434728042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 5
+  npcName: Daniel
+  interactionText: Press [E] to talk to
+  npcSpeech:
+  - Dialogues:
+    - Text: Hello! My name is Daniel. I'm new here, so I don't know anyone here.
+      Duration: 4
+    - Text: I hope that we can be great friends!
+      Duration: 2
+    - Text: You can talk to other people around to see what's up, but class will
+        begin soon.
+      Duration: 3
+    - Text: I'll be here if you want to talk again.
+      Duration: 3
+  - Dialogues:
+    - Text: Bro, I feel like I'm not doing too good with all this work. We got another
+        assignment.
+      Duration: 5
+    - Text: I feel so overwhelmed with school work on top of life stuff.
+      Duration: 3
+    - Text: I think I'm getting worried about nothing but it everything feels off.
+      Duration: 3
+    - Text: Thank you for listening to me bro. I needed that. I enjoy talking to
+        you.
+      Duration: 5
+  teleportIndex: -1
+  teleportLocation: {x: 0, y: 0, z: 0}
+--- !u!1001 &7655431007137079239
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 973717647516224848}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -49.166
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.196
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8660257
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.4999996
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+      propertyPath: m_Name
+      value: Professor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+--- !u!4 &7905845453891565612 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+  m_PrefabInstance: {fileID: 7655431007137079239}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9126197002811425940
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 973717647516224848}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.627592
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000026226044
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      propertyPath: m_Name
+      value: DanielKeyFramed
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4935891292863335518}
+    - targetCorrespondingSourceObject: {fileID: -9144426821234373734, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3512364331257932692}
+    - targetCorrespondingSourceObject: {fileID: -7501455763766903214, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8157267441055866211}
+  m_SourcePrefab: {fileID: 100100000, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+--- !u!1 &7585111155015858886 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7501455763766903214, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+  m_PrefabInstance: {fileID: 9126197002811425940}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8157267441055866211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7585111155015858886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 5
+  npcName: Daniel
+  interactionText: Press [E] to talk to
+  npcSpeech:
+  - Dialogues:
+    - Text: Hello! My name is Daniel. I'm new here, so I don't know anyone here.
+      Duration: 4
+    - Text: I hope that we can be great friends!
+      Duration: 2
+    - Text: You can talk to other people around to see what's up, but class will
+        begin soon.
+      Duration: 3
+    - Text: I'll be here if you want to talk again.
+      Duration: 3
+  - Dialogues:
+    - Text: Bro, I feel like I'm not doing too good with all this work. We got another
+        assignment.
+      Duration: 5
+    - Text: I feel so overwhelmed with school work on top of life stuff.
+      Duration: 3
+    - Text: I think I'm getting worried about nothing but it everything feels off.
+      Duration: 3
+    - Text: Thank you for listening to me bro. I needed that. I enjoy talking to
+        you.
+      Duration: 5
+  - Dialogues:
+    - Text: Yo bro, I came across this cool ad yesterday about something called a
+        vape.
+      Duration: 3
+    - Text: It looks cool. I was thinking of trying it, but I kinda wanted to talk
+        to someone about it first. I thought the best person to mention it to would
+        be you.
+      Duration: 5
+    - Text: I was thinking of buying one soon and trying it out.
+      Duration: 3
+    - Text: I'll let you know how it goes.
+      Duration: 5
+  - Dialogues:
+    - Text: This stuff makes tastes and feels a bit strange, but it doesn't exactly
+        seem horrible.
+      Duration: 4
+    - Text: I gotta get my money's worth y'know. Using all this up now and if I like
+        it, maybe I will get more.
+      Duration: 4
+    - Text: I honestly think it's something I could get used to. There's so many
+        flavours too!
+      Duration: 3
+    - Text: I wonder how the cherry flavour is. Maybe that will be the next one I
+        will try out.
+      Duration: 4
+  teleportIndex: 3
+  teleportLocation: {x: 0, y: 0, z: 0}
+--- !u!1 &8243744575517260229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+  m_PrefabInstance: {fileID: 9126197002811425940}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4935891292863335518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8243744575517260229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 5
+  npcName: Daniel
+  interactionText: Press [E] to talk to
+  npcSpeech:
+  - Dialogues:
+    - Text: Hello! My name is Daniel. I'm new here, so I don't know anyone here.
+      Duration: 4
+    - Text: I hope that we can be great friends!
+      Duration: 2
+    - Text: You can talk to other people around to see what's up, but class will
+        begin soon.
+      Duration: 3
+    - Text: I'll be here if you want to talk again.
+      Duration: 3
+  - Dialogues:
+    - Text: Bro, I feel like I'm not doing too good with all this work. We got another
+        assignment.
+      Duration: 5
+    - Text: I feel so overwhelmed with school work on top of life stuff.
+      Duration: 3
+    - Text: I think I'm getting worried about nothing but it everything feels off.
+      Duration: 3
+    - Text: Thank you for listening to me bro. I needed that. I enjoy talking to
+        you.
+      Duration: 5
+  - Dialogues:
+    - Text: Yo bro, I came across this cool ad yesterday about something called a
+        vape.
+      Duration: 3
+    - Text: It looks cool. I was thinking of trying it, but I kinda wanted to talk
+        to someone about it first. I thought the best person to mention it to would
+        be you.
+      Duration: 5
+    - Text: I was thinking of buying one soon and trying it out.
+      Duration: 3
+    - Text: I'll let you know how it goes.
+      Duration: 5
+  - Dialogues:
+    - Text: This stuff makes tastes and feels a bit strange, but it doesn't exactly
+        seem horrible.
+      Duration: 4
+    - Text: I gotta get my money's worth y'know. Using all this up now and if I like
+        it, maybe I will get more.
+      Duration: 4
+    - Text: I honestly think it's something I could get used to. There's so many
+        flavours too!
+      Duration: 3
+    - Text: I wonder how the cherry flavour is. Maybe that will be the next one I
+        will try out.
+      Duration: 4
+  teleportIndex: 3
+  teleportLocation: {x: -40.9, y: 0, z: 4.37}
+--- !u!4 &8731488670549418879 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+  m_PrefabInstance: {fileID: 9126197002811425940}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9205000928880103182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -9144426821234373734, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+  m_PrefabInstance: {fileID: 9126197002811425940}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3512364331257932692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205000928880103182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 5
+  npcName: Daniel
+  interactionText: Press [E] to talk to
+  npcSpeech:
+  - Dialogues:
+    - Text: Hello! My name is Daniel. I'm new here, so I don't know anyone here.
+      Duration: 4
+    - Text: I hope that we can be great friends!
+      Duration: 2
+    - Text: You can talk to other people around to see what's up, but class will
+        begin soon.
+      Duration: 3
+    - Text: I'll be here if you want to talk again.
+      Duration: 3
+  - Dialogues:
+    - Text: Bro, I feel like I'm not doing too good with all this work. We got another
+        assignment.
+      Duration: 5
+    - Text: I feel so overwhelmed with school work on top of life stuff.
+      Duration: 3
+    - Text: I think I'm getting worried about nothing but it everything feels off.
+      Duration: 3
+    - Text: Thank you for listening to me bro. I needed that. I enjoy talking to
+        you.
+      Duration: 5
+  - Dialogues:
+    - Text: Yo bro, I came across this cool ad yesterday about something called a
+        vape.
+      Duration: 3
+    - Text: It looks cool. I was thinking of trying it, but I kinda wanted to talk
+        to someone about it first. I thought the best person to mention it to would
+        be you.
+      Duration: 5
+    - Text: I was thinking of buying one soon and trying it out.
+      Duration: 3
+    - Text: I'll let you know how it goes.
+      Duration: 5
+  - Dialogues:
+    - Text: This stuff makes tastes and feels a bit strange, but it doesn't exactly
+        seem horrible.
+      Duration: 4
+    - Text: I gotta get my money's worth y'know. Using all this up now and if I like
+        it, maybe I will get more.
+      Duration: 4
+    - Text: I honestly think it's something I could get used to. There's so many
+        flavours too!
+      Duration: 3
+    - Text: I wonder how the cherry flavour is. Maybe that will be the next one I
+        will try out.
+      Duration: 4
+  teleportIndex: 3
+  teleportLocation: {x: 0, y: 0, z: 0}

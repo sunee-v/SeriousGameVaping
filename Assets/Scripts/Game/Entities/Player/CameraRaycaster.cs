@@ -30,8 +30,6 @@ public class CameraRaycaster : MonoBehaviour
 	private void OnDestroy()
 	{
 		RemoveInputActions();
-		GameManager.Instance.Inventory.OnSlotChanged -= _ => clearTarget();
-		GameManager.Instance.Inventory.OnInventoryUpdate -= _ => clearTarget();
 	}
 	private void Update()
 	{

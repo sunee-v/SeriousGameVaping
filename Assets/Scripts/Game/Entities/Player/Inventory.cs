@@ -77,6 +77,11 @@ public class Inventory : MonoBehaviour
 		if (!_changed) { return; }
 		OnSlotChanged?.Invoke(selectedSlot);
 	}
+	private void OnDestroy()
+	{
+		OnSlotChanged = null;
+		OnInventoryUpdate = null;
+	}
 }
 public delegate void UpdateInventory(IInventoryItem[] _items);
 public delegate void UpdateSelectedSlot(int _slot);
