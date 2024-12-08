@@ -980,10 +980,8 @@ MonoBehaviour:
   playerPrefab: {fileID: 2283400416031375384, guid: 202ff6cda803544018230ce61bb78add, type: 3}
   spwanPosition: {fileID: 1049550406}
   frameRate: 60
-  hasInteractedWithProfessor: 1
   <VapeContents>k__BackingField:
   - formaldehyde
-  - test2
   <AccuracyToWin>k__BackingField: 50
 --- !u!4 &710022370
 Transform:

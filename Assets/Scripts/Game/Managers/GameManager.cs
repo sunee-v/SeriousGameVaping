@@ -7,7 +7,7 @@ public class GameManager : InstanceFactory<GameManager>
 	[SerializeField] private int frameRate = 60;
 	public GameObject Player { get; private set; }
 	public Inventory Inventory { get; private set; }
-	public bool hasInteractedWithProfessor;
+	[HideInInspector] public bool hasInteractedWithProfessor;
 	[field: SerializeField] public string[] VapeContents { get; private set; }
 	[field: Header("The accuracy needed to win the game in percentage")]
 	[field: SerializeField, Range(0, 100)] public int AccuracyToWin { get; private set; } = 50;
