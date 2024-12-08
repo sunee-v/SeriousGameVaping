@@ -1,5 +1,304 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &876704375952743085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8624350959561133171}
+  - component: {fileID: 5454931743644860062}
+  - component: {fileID: 4357940043042479063}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8624350959561133171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876704375952743085}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.334, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7905845453891565612}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &5454931743644860062
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876704375952743085}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4357940043042479063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876704375952743085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 5
+  npcName: Professor
+  interactionText: Press [E] to talk to
+  npcSpeech:
+  - Dialogues:
+    - Text: Well to start off, Canada has one of the highest rates of vaping. Almost
+        50% of students back in 2021 and 2022 have tried or were actively vaping!
+        An incredible percentage!
+      Duration: 4
+    - Text: McGill University has found that males that vape are at a higher risk
+        of developing heart disease.
+      Duration: 4
+    - Text: There was a development of atherosclerosis, a condition that can cause
+        heart attacks. It's when the heart and blood vessels get built up with plaque.
+      Duration: 4
+    - Text: Not to mention that there is nicotine in these vapes! Nicotine is known
+        to be highly addictive and it can also cause brain damage.
+      Duration: 4
+    - Text: Well there's more damage that is yet to be researched upon due to how
+        rather recent vapes are in the scene.
+      Duration: 3
+    - Text: But the carcinogens that make up the e-liquids for flavouring are a lot
+        more harmful than they seems. Well, carcinogens are known to cause cancer.
+      Duration: 3
+    - Text: There's also things like formaldehyde that is found in vapes. Formaldehyde
+        is a chemical used to preserve bodies after death. So, technically it means
+        you are consuming what morticians use on the deceased.
+      Duration: 5
+  teleportIndex: -1
+  teleportLocation: {x: 0, y: 0, z: 0}
+--- !u!1 &2696770334820727740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 188828555024937514}
+  - component: {fileID: 2416602122599924605}
+  - component: {fileID: 2005662301857383850}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &188828555024937514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2696770334820727740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.393, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8731488670549418879}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &2416602122599924605
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2696770334820727740}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2005662301857383850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2696770334820727740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 5
+  npcName: Daniel
+  interactionText: Press [E] to talk to
+  npcSpeech:
+  - Dialogues:
+    - Text: Hello! My name is Daniel. I'm new here, so I don't know anyone here.
+      Duration: 2
+    - Text: I hope that we can be great friends!
+      Duration: 2
+    - Text: You can talk to other people around to see what's up, but class will
+        begin soon.
+      Duration: 2
+    - Text: I'll be here if you want to talk again.
+      Duration: 1
+  - Dialogues:
+    - Text: Bro, I feel like I'm not doing too good with all this work. We got another
+        assignment.
+      Duration: 2
+    - Text: I feel so overwhelmed with school work on top of life stuff.
+      Duration: 2
+    - Text: I think I'm getting worried about nothing but it everything feels off.
+      Duration: 2
+    - Text: Thank you for listening to me bro. I needed that. I enjoy talking to
+        you.
+      Duration: 1
+  - Dialogues:
+    - Text: Yo bro, I came across this cool ad yesterday about something called a
+        vape.
+      Duration: 2
+    - Text: It looks cool. I was thinking of trying it, but I kinda wanted to talk
+        to someone about it first. I thought the best person to mention it to would
+        be you.
+      Duration: 3
+    - Text: I was thinking of buying one soon and trying it out.
+      Duration: 2
+    - Text: I'll let you know how it goes.
+      Duration: 1
+  - Dialogues:
+    - Text: This stuff makes tastes and feels a bit strange, but it doesn't exactly
+        seem horrible.
+      Duration: 3
+    - Text: I gotta get my money's worth y'know. Using all this up now and if I like
+        it, maybe I will get more.
+      Duration: 3
+    - Text: I honestly think it's something I could get used to. There's so many
+        flavours too!
+      Duration: 2
+    - Text: I wonder how the cherry flavour is. Maybe that will be the next one I
+        will try out.
+      Duration: 1
+  teleportIndex: 3
+  teleportLocation: {x: -38.93, y: 0, z: 4.823176}
+--- !u!1 &3692889570219729466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4950096946714717200}
+  - component: {fileID: 3216030716845615676}
+  - component: {fileID: 9071503229508240028}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4950096946714717200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3692889570219729466}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.32, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2464314981734155731}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &3216030716845615676
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3692889570219729466}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9071503229508240028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3692889570219729466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 5
+  npcName: Daniel
+  interactionText: Press [E] to talk to
+  npcSpeech:
+  - Dialogues:
+    - Text: Yo!
+      Duration: 1
+    - Text: Didn't you say you wanted to talk to the professor?
+      Duration: 3
+    - Text: Go talk to him! I'll wait here.
+      Duration: 1
+  teleportIndex: -1
+  teleportLocation: {x: 0, y: 0, z: 0}
 --- !u!1 &6804670874729380918
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +387,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4950096946714717200}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
       insertIndex: -1
@@ -127,52 +429,13 @@ MonoBehaviour:
   interactionText: Press [E] to talk to
   npcSpeech:
   - Dialogues:
-    - Text: Hello! My name is Daniel. I'm new here, so I don't know anyone here.
-      Duration: 4
-    - Text: I hope that we can be great friends!
-      Duration: 2
-    - Text: You can talk to other people around to see what's up, but class will
-        begin soon.
+    - Text: Yo!
+      Duration: 1
+    - Text: Didn't you say you wanted to talk to the professor?
       Duration: 3
-    - Text: I'll be here if you want to talk again.
-      Duration: 3
-  - Dialogues:
-    - Text: Bro, I feel like I'm not doing too good with all this work. We got another
-        assignment.
-      Duration: 5
-    - Text: I feel so overwhelmed with school work on top of life stuff.
-      Duration: 3
-    - Text: I think I'm getting worried about nothing but it everything feels off.
-      Duration: 3
-    - Text: Thank you for listening to me bro. I needed that. I enjoy talking to
-        you.
-      Duration: 5
-  - Dialogues:
-    - Text: Yo bro, I came across this cool ad yesterday about something called a
-        vape.
-      Duration: 3
-    - Text: It looks cool. I was thinking of trying it, but I kinda wanted to talk
-        to someone about it first. I thought the best person to mention it to would
-        be you.
-      Duration: 5
-    - Text: I was thinking of buying one soon and trying it out.
-      Duration: 3
-    - Text: I'll let you know how it goes.
-      Duration: 5
-  - Dialogues:
-    - Text: This stuff makes tastes and feels a bit strange, but it doesn't exactly
-        seem horrible.
-      Duration: 4
-    - Text: I gotta get my money's worth y'know. Using all this up now and if I like
-        it, maybe I will get more.
-      Duration: 4
-    - Text: I honestly think it's something I could get used to. There's so many
-        flavours too!
-      Duration: 3
-    - Text: I wonder how the cherry flavour is. Maybe that will be the next one I
-        will try out.
-      Duration: 4
-  teleportIndex: 3
+    - Text: Go talk to him! I'll wait here.
+      Duration: 1
+  teleportIndex: -1
   teleportLocation: {x: 0, y: 0, z: 0}
 --- !u!1 &2988369008715128681 stripped
 GameObject:
@@ -196,52 +459,13 @@ MonoBehaviour:
   interactionText: Press [E] to talk to
   npcSpeech:
   - Dialogues:
-    - Text: Hello! My name is Daniel. I'm new here, so I don't know anyone here.
-      Duration: 4
-    - Text: I hope that we can be great friends!
-      Duration: 2
-    - Text: You can talk to other people around to see what's up, but class will
-        begin soon.
+    - Text: Yo!
+      Duration: 1
+    - Text: Didn't you say you wanted to talk to the professor?
       Duration: 3
-    - Text: I'll be here if you want to talk again.
-      Duration: 3
-  - Dialogues:
-    - Text: Bro, I feel like I'm not doing too good with all this work. We got another
-        assignment.
-      Duration: 5
-    - Text: I feel so overwhelmed with school work on top of life stuff.
-      Duration: 3
-    - Text: I think I'm getting worried about nothing but it everything feels off.
-      Duration: 3
-    - Text: Thank you for listening to me bro. I needed that. I enjoy talking to
-        you.
-      Duration: 5
-  - Dialogues:
-    - Text: Yo bro, I came across this cool ad yesterday about something called a
-        vape.
-      Duration: 3
-    - Text: It looks cool. I was thinking of trying it, but I kinda wanted to talk
-        to someone about it first. I thought the best person to mention it to would
-        be you.
-      Duration: 5
-    - Text: I was thinking of buying one soon and trying it out.
-      Duration: 3
-    - Text: I'll let you know how it goes.
-      Duration: 5
-  - Dialogues:
-    - Text: This stuff makes tastes and feels a bit strange, but it doesn't exactly
-        seem horrible.
-      Duration: 4
-    - Text: I gotta get my money's worth y'know. Using all this up now and if I like
-        it, maybe I will get more.
-      Duration: 4
-    - Text: I honestly think it's something I could get used to. There's so many
-        flavours too!
-      Duration: 3
-    - Text: I wonder how the cherry flavour is. Maybe that will be the next one I
-        will try out.
-      Duration: 4
-  teleportIndex: 3
+    - Text: Go talk to him! I'll wait here.
+      Duration: 1
+  teleportIndex: -1
   teleportLocation: {x: 0, y: 0, z: 0}
 --- !u!1 &3628988344434728042 stripped
 GameObject:
@@ -265,26 +489,12 @@ MonoBehaviour:
   interactionText: Press [E] to talk to
   npcSpeech:
   - Dialogues:
-    - Text: Hello! My name is Daniel. I'm new here, so I don't know anyone here.
-      Duration: 4
-    - Text: I hope that we can be great friends!
-      Duration: 2
-    - Text: You can talk to other people around to see what's up, but class will
-        begin soon.
+    - Text: Yo!
+      Duration: 1
+    - Text: Didn't you say you wanted to talk to the professor?
       Duration: 3
-    - Text: I'll be here if you want to talk again.
-      Duration: 3
-  - Dialogues:
-    - Text: Bro, I feel like I'm not doing too good with all this work. We got another
-        assignment.
-      Duration: 5
-    - Text: I feel so overwhelmed with school work on top of life stuff.
-      Duration: 3
-    - Text: I think I'm getting worried about nothing but it everything feels off.
-      Duration: 3
-    - Text: Thank you for listening to me bro. I needed that. I enjoy talking to
-        you.
-      Duration: 5
+    - Text: Go talk to him! I'll wait here.
+      Duration: 1
   teleportIndex: -1
   teleportLocation: {x: 0, y: 0, z: 0}
 --- !u!1001 &7655431007137079239
@@ -341,9 +551,162 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8624350959561133171}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8699652204047898494, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8374934000303273253}
+    - targetCorrespondingSourceObject: {fileID: 7346485386187551627, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3455895449813573299}
+    - targetCorrespondingSourceObject: {fileID: 6356181476601797590, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5489696445810601785}
   m_SourcePrefab: {fileID: 100100000, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+--- !u!1 &1138980220509105228 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7346485386187551627, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+  m_PrefabInstance: {fileID: 7655431007137079239}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3455895449813573299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138980220509105228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 5
+  npcName: Professor
+  interactionText: Press [E] to talk to
+  npcSpeech:
+  - Dialogues:
+    - Text: Well to start off, Canada has ne of the highest rates of vaping. Almost
+        50% of students back in 2021 and 2022 have tried or were actively vaping!
+        An incredible percentage!
+      Duration: 4
+    - Text: McGill University has found that males that vape are at a higher risk
+        of developing heart disease.
+      Duration: 2
+    - Text: There was a development of atherosclerosis, a condition that can cause
+        heart attacks. It's when the heart and blood vessels get built up with plaque.
+      Duration: 3
+    - Text: Not to mention that there is nicotine in these vapes! Nicotine is known
+        to be highly addictive and it can also cause brain damage.
+      Duration: 2
+    - Text: Well there's more damage that is yet to be researched upon due to how
+        rather recent vapes are in the scene.
+      Duration: 3
+    - Text: But the carcinogens that make up the e-liquids for flavouring are a lot
+        more harmful than they seems. Well, carcinogens are known to cause cancer.
+      Duration: 3
+    - Text: There's also things like formaldehyde that is found in vapes. Formaldehyde
+        is a chemical used to preserve bodies after death. So, technically it means
+        you are consuming what morticians use on the deceased.
+      Duration: 5
+  teleportIndex: -1
+  teleportLocation: {x: 0, y: 0, z: 0}
+--- !u!1 &1334985679072037049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8699652204047898494, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+  m_PrefabInstance: {fileID: 7655431007137079239}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8374934000303273253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334985679072037049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 5
+  npcName: Professor
+  interactionText: Press [E] to talk to
+  npcSpeech:
+  - Dialogues:
+    - Text: Well to start off, Canada has ne of the highest rates of vaping. Almost
+        50% of students back in 2021 and 2022 have tried or were actively vaping!
+        An incredible percentage!
+      Duration: 4
+    - Text: McGill University has found that males that vape are at a higher risk
+        of developing heart disease.
+      Duration: 2
+    - Text: There was a development of atherosclerosis, a condition that can cause
+        heart attacks. It's when the heart and blood vessels get built up with plaque.
+      Duration: 3
+    - Text: Not to mention that there is nicotine in these vapes! Nicotine is known
+        to be highly addictive and it can also cause brain damage.
+      Duration: 2
+    - Text: Well there's more damage that is yet to be researched upon due to how
+        rather recent vapes are in the scene.
+      Duration: 3
+    - Text: But the carcinogens that make up the e-liquids for flavouring are a lot
+        more harmful than they seems. Well, carcinogens are known to cause cancer.
+      Duration: 3
+    - Text: There's also things like formaldehyde that is found in vapes. Formaldehyde
+        is a chemical used to preserve bodies after death. So, technically it means
+        you are consuming what morticians use on the deceased.
+      Duration: 5
+  teleportIndex: -1
+  teleportLocation: {x: 0, y: 0, z: 0}
+--- !u!1 &3605198093939508241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6356181476601797590, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
+  m_PrefabInstance: {fileID: 7655431007137079239}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5489696445810601785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3605198093939508241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 5
+  npcName: Professor
+  interactionText: Press [E] to talk to
+  npcSpeech:
+  - Dialogues:
+    - Text: Well to start off, Canada has ne of the highest rates of vaping. Almost
+        50% of students back in 2021 and 2022 have tried or were actively vaping!
+        An incredible percentage!
+      Duration: 4
+    - Text: McGill University has found that males that vape are at a higher risk
+        of developing heart disease.
+      Duration: 2
+    - Text: There was a development of atherosclerosis, a condition that can cause
+        heart attacks. It's when the heart and blood vessels get built up with plaque.
+      Duration: 3
+    - Text: Not to mention that there is nicotine in these vapes! Nicotine is known
+        to be highly addictive and it can also cause brain damage.
+      Duration: 2
+    - Text: Well there's more damage that is yet to be researched upon due to how
+        rather recent vapes are in the scene.
+      Duration: 3
+    - Text: But the carcinogens that make up the e-liquids for flavouring are a lot
+        more harmful than they seems. Well, carcinogens are known to cause cancer.
+      Duration: 3
+    - Text: There's also things like formaldehyde that is found in vapes. Formaldehyde
+        is a chemical used to preserve bodies after death. So, technically it means
+        you are consuming what morticians use on the deceased.
+      Duration: 5
+  teleportIndex: -1
+  teleportLocation: {x: 0, y: 0, z: 0}
 --- !u!4 &7905845453891565612 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5f9f392aecef4ad79dd36cded73aa6f, type: 3}
@@ -403,87 +766,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 188828555024937514}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4935891292863335518}
-    - targetCorrespondingSourceObject: {fileID: -9144426821234373734, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3512364331257932692}
-    - targetCorrespondingSourceObject: {fileID: -7501455763766903214, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8157267441055866211}
   m_SourcePrefab: {fileID: 100100000, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
---- !u!1 &7585111155015858886 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7501455763766903214, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
-  m_PrefabInstance: {fileID: 9126197002811425940}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8157267441055866211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7585111155015858886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <MaxRange>k__BackingField: 5
-  npcName: Daniel
-  interactionText: Press [E] to talk to
-  npcSpeech:
-  - Dialogues:
-    - Text: Hello! My name is Daniel. I'm new here, so I don't know anyone here.
-      Duration: 4
-    - Text: I hope that we can be great friends!
-      Duration: 2
-    - Text: You can talk to other people around to see what's up, but class will
-        begin soon.
-      Duration: 3
-    - Text: I'll be here if you want to talk again.
-      Duration: 3
-  - Dialogues:
-    - Text: Bro, I feel like I'm not doing too good with all this work. We got another
-        assignment.
-      Duration: 5
-    - Text: I feel so overwhelmed with school work on top of life stuff.
-      Duration: 3
-    - Text: I think I'm getting worried about nothing but it everything feels off.
-      Duration: 3
-    - Text: Thank you for listening to me bro. I needed that. I enjoy talking to
-        you.
-      Duration: 5
-  - Dialogues:
-    - Text: Yo bro, I came across this cool ad yesterday about something called a
-        vape.
-      Duration: 3
-    - Text: It looks cool. I was thinking of trying it, but I kinda wanted to talk
-        to someone about it first. I thought the best person to mention it to would
-        be you.
-      Duration: 5
-    - Text: I was thinking of buying one soon and trying it out.
-      Duration: 3
-    - Text: I'll let you know how it goes.
-      Duration: 5
-  - Dialogues:
-    - Text: This stuff makes tastes and feels a bit strange, but it doesn't exactly
-        seem horrible.
-      Duration: 4
-    - Text: I gotta get my money's worth y'know. Using all this up now and if I like
-        it, maybe I will get more.
-      Duration: 4
-    - Text: I honestly think it's something I could get used to. There's so many
-        flavours too!
-      Duration: 3
-    - Text: I wonder how the cherry flavour is. Maybe that will be the next one I
-        will try out.
-      Duration: 4
-  teleportIndex: 3
-  teleportLocation: {x: 0, y: 0, z: 0}
 --- !u!1 &8243744575517260229 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
@@ -558,72 +849,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
   m_PrefabInstance: {fileID: 9126197002811425940}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &9205000928880103182 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -9144426821234373734, guid: b144a9e7a2670460cad3efab56290ae4, type: 3}
-  m_PrefabInstance: {fileID: 9126197002811425940}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3512364331257932692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9205000928880103182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfe91ccc3aaa64934b8b5043b9f3806e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <MaxRange>k__BackingField: 5
-  npcName: Daniel
-  interactionText: Press [E] to talk to
-  npcSpeech:
-  - Dialogues:
-    - Text: Hello! My name is Daniel. I'm new here, so I don't know anyone here.
-      Duration: 4
-    - Text: I hope that we can be great friends!
-      Duration: 2
-    - Text: You can talk to other people around to see what's up, but class will
-        begin soon.
-      Duration: 3
-    - Text: I'll be here if you want to talk again.
-      Duration: 3
-  - Dialogues:
-    - Text: Bro, I feel like I'm not doing too good with all this work. We got another
-        assignment.
-      Duration: 5
-    - Text: I feel so overwhelmed with school work on top of life stuff.
-      Duration: 3
-    - Text: I think I'm getting worried about nothing but it everything feels off.
-      Duration: 3
-    - Text: Thank you for listening to me bro. I needed that. I enjoy talking to
-        you.
-      Duration: 5
-  - Dialogues:
-    - Text: Yo bro, I came across this cool ad yesterday about something called a
-        vape.
-      Duration: 3
-    - Text: It looks cool. I was thinking of trying it, but I kinda wanted to talk
-        to someone about it first. I thought the best person to mention it to would
-        be you.
-      Duration: 5
-    - Text: I was thinking of buying one soon and trying it out.
-      Duration: 3
-    - Text: I'll let you know how it goes.
-      Duration: 5
-  - Dialogues:
-    - Text: This stuff makes tastes and feels a bit strange, but it doesn't exactly
-        seem horrible.
-      Duration: 4
-    - Text: I gotta get my money's worth y'know. Using all this up now and if I like
-        it, maybe I will get more.
-      Duration: 4
-    - Text: I honestly think it's something I could get used to. There's so many
-        flavours too!
-      Duration: 3
-    - Text: I wonder how the cherry flavour is. Maybe that will be the next one I
-        will try out.
-      Duration: 4
-  teleportIndex: 3
-  teleportLocation: {x: 0, y: 0, z: 0}

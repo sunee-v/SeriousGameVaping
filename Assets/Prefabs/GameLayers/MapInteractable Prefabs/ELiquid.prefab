@@ -81,5 +81,8 @@ MonoBehaviour:
   <ItemIcon>k__BackingField: {fileID: 21300000, guid: 6e788e7dc61869246ac1cabf45ecadd0, type: 3}
   <ItemName>k__BackingField: E-Liquid
   interactionText: Press [E] to pick up
-  pickUpNarrative: Hey you picked up this ite, this item bla bla bla
+  pickUpNarrative: '"WARNING: This product can expose you to chemicals, including
+    formaldehyde, which is known to the state of California to cause cancer, and
+    nicotine. Which is known to the state of California to cause birth defects or
+    other reproductive harm." '
   narrativeSprite: {fileID: 21300000, guid: df507c7e0f417402cac9ced64bafc5bb, type: 3}

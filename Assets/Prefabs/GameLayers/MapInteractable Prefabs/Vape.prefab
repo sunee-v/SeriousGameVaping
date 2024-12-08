@@ -81,5 +81,6 @@ MonoBehaviour:
   <ItemIcon>k__BackingField: {fileID: 21300000, guid: 62b14e9087e43774d958bd357d314dd6, type: 3}
   <ItemName>k__BackingField: Vape
   interactionText: Press [E] to pick up
-  pickUpNarrative: Hey you picked up this ite, this item bla bla bla
-  narrativeSprite: {fileID: 0}
+  pickUpNarrative: It seems you have picked up a vaping device. How do these even
+    work?
+  narrativeSprite: {fileID: 21300000, guid: 7174f75db38f9415cb4a73bc1599191c, type: 3}
