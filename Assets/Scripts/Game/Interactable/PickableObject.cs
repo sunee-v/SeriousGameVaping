@@ -29,6 +29,7 @@ public class PickableObject : MonoBehaviour, IInteractable, IInventoryItem
 			return;
 		}
 		gameObject.SetActive(false);
+		transform.parent = null;
 	}
 
 	public void OnStartHover()
